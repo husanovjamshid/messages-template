@@ -1,0 +1,124 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    background-color: #CFDDE8;
+}
+
+main {
+    flex-grow: 1;
+}
+
+img {
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+.hero__wrap {
+    margin: 20px auto;
+    width: 400px;
+    background: #FFFFFF;
+    border-radius: 14px;
+}
+
+.hero__author {
+    background: #6A96D8;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.author__title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-family: 'Roboto';
+    padding: 20px 23px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+}
+
+.author__title::before {
+    position: relative;
+    top: 1px;
+    content: "";
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    background-image: url('../images/Ellipse\ 1.svg');
+    background-repeat: no-repeat;
+}
+
+.author__title::after {
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url('../images/Vector.svg');
+    background-repeat: no-repeat;
+}
+
+.hero__content {
+    margin: 0 auto;
+    width: 352px;
+    padding: 24px 0 20px ;
+}
+
+.content__title {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    font-variant: small-caps;
+    color: #DDDDDD;
+}
+
+.content__title::after {
+    margin-left: 10px;
+    content: "";
+    display: block;
+    width: 145px;
+    border: 1px solid #DDDDDD;
+}
+
+.content__title::before {
+    margin-right: 10px;
+    content: "";
+    display: block;
+    width: 145px;
+    border: 1px solid #DDDDDD;
+}
