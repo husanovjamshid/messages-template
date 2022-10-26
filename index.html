@@ -11,62 +11,75 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <main>
-    <section class="hero">
-        <div class="container">
-            <div class="hero__wrap">
-                <div class="hero__author author">
-                    <h1 class="author__title">mark zuckerberg</h1>
-                </div>
-    
-                <div class="hero__content content">
-                    <div class="content__title">today</div>
-    
-                    <ul class="content__list">
-                        <li class="content__item">
-                            <p class="content__date">10:53</p>
-                            <div class="content__messages messages">
-                                <span class="messages__triangle"></span>
-                                <p class="messages__title">Hi, Mark! I made a new design for Messenger App.</p>
-                            </div>
-                        </li>
-
-
-                        <li class="content__item content__item-two">
-                            <p class="content__date content__date-two">10:57</p>
-                            <div class="content__messages content__messages-two messages">
-                                <span class="messages__triangle messages__triangle-two"></span>
-                                <p class="messages__title">Yo! Send it to my assistsnt and we’ll review it during the year.</p>
-                            </div>
-                        </li>
-
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrap">
+                    <div class="hero__author author">
+                        <h1 class="author__title">mark zuckerberg
+                                <img class="author__close" src="./images/Vector.svg" alt=""> 
+                        </h1>
                         
-                        <li class="content__item">
-                            <p class="content__date">11:03</p>
-                            <div class="content__messages content__messages-three messages">
-                                <span class="messages__triangle"></span>
-                                <p class="messages__title">But Mark...</p>
-                            </div>
-                        </li>
-
-
-                        <li class="content__item content__item-four">
-                            <div class="content__messages content__messages-four messages">
-                                <p class="messages__title">You were blocked by the user.</p>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                    <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-                        <input type="text" name="user__message" required placeholder="Enter your message" >
-
-                        <button class="form__btn" type="submit">SEND</button>
-                    </form>
+                    </div>
+                    
+                    <div class="hero__content content">
+                        <div class="content__title">today</div>
+                        
+                        <ul class="content__list">
+                            <li class="content__item">
+                                <p class="content__date">10:53</p>
+                                <div class="content__messages messages">
+                                    <span class="messages__triangle"></span>
+                                    <p class="messages__title">Hi, Mark! I made a new design for Messenger App.</p>
+                                </div>
+                            </li>
+                            
+                            
+                            <li class="content__item content__item-two">
+                                <p class="content__date content__date-two">10:57</p>
+                                <div class="content__messages content__messages-two messages">
+                                    <span class="messages__triangle messages__triangle-two"></span>
+                                    <p class="messages__title">Yo! Send it to my assistsnt and we’ll review it during the year.</p>
+                                </div>
+                            </li>
+                            
+                            
+                            <li class="content__item">
+                                <p class="content__date">11:03</p>
+                                <div class="content__messages content__messages-three messages">
+                                    <span class="messages__triangle"></span>
+                                    <p class="messages__title">But Mark...</p>
+                                </div>
+                            </li>
+                            
+                            
+                            <li class="content__item content__item-four">
+                                <div class="content__messages content__messages-four messages">
+                                    <p class="messages__title">You were blocked by the user.</p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        
+                        <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                            <input type="text" name="user__message" required placeholder="Enter your message" aria-label="Write messages">
+                            
+                            <button class="form__btn" type="submit">SEND</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-  </main>
+        </section>
+    </main>
+    
+    
+    <script src="./js/script.js">
+        let CloseBtn = document.querySelector('.author__close');
+        let hero = document.querySelector('.hero');
+        
+        CloseBtn.addEventListener('click', function(){
+            hero.classList('close');
+        });
+    </script>
 </body>
 </html>

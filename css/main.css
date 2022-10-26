@@ -78,17 +78,14 @@ img {
     background-repeat: no-repeat;
 }
 
-.author__title::after {
+.author__close {
     position: relative;
-    top: 1px;
+    top: -2px;
     cursor: pointer;
     margin-left: auto;
     display: block;
-    content: "";
     width: 14px;
     height: 14px;
-    background-image: url('../images/Vector.svg');
-    background-repeat: no-repeat;
 }
 
 .hero__content {
@@ -262,4 +259,8 @@ form input::placeholder {
     font-variant: small-caps;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.close {
+    display: none;
 }
